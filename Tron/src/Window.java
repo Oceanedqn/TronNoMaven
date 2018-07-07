@@ -1,7 +1,10 @@
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Container;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 
 public class Window extends JFrame{
 
@@ -10,19 +13,22 @@ public class Window extends JFrame{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	JPanel areaScore = new JPanel();
-	JPanel areaGame = new JPanel();
+	
 	
 	
 	public Window() {
 		
 		this.setTitle("Tron");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(600,400);
+		this.setSize(600,500);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
+		
+		//Garde la fenêtre au premier plan
 		this.setAlwaysOnTop(true);
-		this.setVisible(true);
-		//this.getContentPane().setBackground(Color.BLACK);
+	
+		this.getContentPane().setBackground(Color.BLACK);
+		
+		this.setContentPane(new Score());
 	}
 }
