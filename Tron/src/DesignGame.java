@@ -5,6 +5,11 @@ import javax.swing.JPanel;
 
 public class DesignGame extends JPanel{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public void paintComponent(Graphics g) {
 		
 		//Couleur du fond score
