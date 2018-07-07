@@ -3,7 +3,7 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-public class Score extends JPanel{
+public class DesignGame extends JPanel{
 
 	public void paintComponent(Graphics g) {
 		

@@ -29,6 +29,6 @@ public class Window extends JFrame{
 	
 		this.getContentPane().setBackground(Color.BLACK);
 		
-		this.setContentPane(new Score());
+		this.setContentPane(new DesignGame());
 	}
 }
