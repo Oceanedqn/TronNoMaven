@@ -32,15 +32,7 @@ public class Menuu extends JFrame{
 	}
         public Menuu() {
         	
-        	this.setTitle("Menu");
-        	this.setSize(600, 400);
-            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.setLocationRelativeTo(null);
-            //Ajout du bouton à notre content pane
-            pan.add(bouton);
-            this.setContentPane(pan);
-            this.setVisible(true);
-            repaint();
+
         }
 	
 
