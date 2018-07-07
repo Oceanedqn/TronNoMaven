@@ -4,21 +4,14 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Menuu extends JFrame{
+public class Menuu extends JPanel{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	
-	private JPanel pan = new JPanel();
-	private JButton bouton = new JButton("Start");
-	
-	
+
 	
 	public void paintComponent(Graphics g){
         try{

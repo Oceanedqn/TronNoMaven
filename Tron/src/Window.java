@@ -8,7 +8,7 @@ public class Window extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	Menuu menuu = new Menuu();
 
 	public Window() {
 		
@@ -19,7 +19,6 @@ public class Window extends JFrame{
 		this.setResizable(false);		
 		//Garde la fenêtre au premier plan
 		this.setAlwaysOnTop(true);		
-		this.setVisible(true);
 		this.getContentPane().setBackground(Color.BLACK);
 			    
 	  }
