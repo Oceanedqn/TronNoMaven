@@ -1,25 +1,32 @@
 import java.awt.Color;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Window extends JFrame{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	Menuu menuu = new Menuu();
+
+	private JPanel pan = new JPanel();
+	private JButton bouton = new JButton("Start");
+	
+	//Menuu menuu = new Menuu();
 
 	public Window() {
 		
 		this.setTitle("Tron");
-		this.setSize(600,400);		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLocationRelativeTo(null);
-		this.setResizable(false);		
-		//Garde la fenêtre au premier plan
-		this.setAlwaysOnTop(true);		
-		this.getContentPane().setBackground(Color.BLACK);
+	    this.setSize(600, 400);
+	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    this.setLocationRelativeTo(null);
+	    this.setResizable(false);	
+	    this.setAlwaysOnTop(true);	
+	    
+
+	    //Ajout du bouton à notre content pane
+	    pan.add(bouton);
+	    this.setContentPane(pan);
+	    this.setVisible(true);
+		
 			    
 	  }
 	  }	

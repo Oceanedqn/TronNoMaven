@@ -5,8 +5,7 @@ public class Main {
 
 		Window win = new Window();
 		win.setVisible(true);
-	//Window win = new Window();
-	//win.setVisible(true);	
+
 	}
 
 }
