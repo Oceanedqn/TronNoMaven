@@ -3,9 +3,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-
-	 new Window();
-		
+		new Menuu();
+	//Window win = new Window();
+	//win.setVisible(true);	
 	}
 
 }
