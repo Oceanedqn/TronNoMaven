@@ -1,15 +1,22 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
-public class Window extends JFrame{
+public class Window extends JFrame implements /*IView*/ ActionListener{
 
-
-	private JPanel pan = new JPanel();
-	private JButton bouton = new JButton("Start");
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	JButton bouton = new JButton("Start");
+	private Menuu menuu = new Menuu();
+	//private JPanel pan = new JPanel();
+	 
 	
 	//Menuu menuu = new Menuu();
 
@@ -23,10 +30,23 @@ public class Window extends JFrame{
 	    this.setAlwaysOnTop(true);	
 	    
 
+	    
 	    this.getContentPane().setBackground(Color.BLACK);
+	    
+	    
+	    menuu.setLayout(new BorderLayout());
+	    menuu.add(bouton, BorderLayout.SOUTH);
+	    bouton.addActionListener(this);
+	    this.setContentPane(menuu);
 	    this.setVisible(true);
 		
 			    
 	  }
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 	  }	
 	
