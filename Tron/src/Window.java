@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Color;
 
 import javax.swing.JButton;
@@ -22,9 +23,7 @@ public class Window extends JFrame{
 	    this.setAlwaysOnTop(true);	
 	    
 
-	    //Ajout du bouton à notre content pane
-	    pan.add(bouton);
-	    this.setContentPane(pan);
+	    this.getContentPane().setBackground(Color.BLACK);
 	    this.setVisible(true);
 		
 			    
