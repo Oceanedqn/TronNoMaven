@@ -18,7 +18,7 @@ public class Menuu extends JPanel implements KeyListener{
 	
 	
 	
-	int tabPicture[] = {0,1,2,3};
+
 	
 	public void paintComponent(Graphics g){
 		
@@ -28,18 +28,18 @@ public class Menuu extends JPanel implements KeyListener{
 		{
 			Image img = ImageIO.read(new File("src/pictures/TronBleu.png"));
 			g.drawImage(img, 165, 50, this);
-			tabPicture[0] = 1;
 		} 
 		catch(IOException e){
 			e.printStackTrace();
 		}
 		
 		
+		
+		
 		try
 		{
 			Image img = ImageIO.read(new File("src/pictures/TronRose.png"));
 			g.drawImage(img, 165, 50, this);
-			tabPicture[1] = 2;
 		} 
 		catch(IOException e){
 			e.printStackTrace();
