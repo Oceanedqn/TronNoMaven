@@ -5,7 +5,6 @@ import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 
 public class Game extends JFrame implements KeyListener{
-
 	/**
 	 * 
 	 */
@@ -20,15 +19,10 @@ public class Game extends JFrame implements KeyListener{
 	    this.setAlwaysOnTop(true);	
 		this.setBackground(Color.BLACK);
 		this.setVisible(true);
-	    
-		
 	}
 	
-
 	@Override
-	public void keyTyped(KeyEvent e) {
-		
-		
+	public void keyTyped(KeyEvent e) {		
 	}
 
 	@Override
@@ -69,15 +63,11 @@ public class Game extends JFrame implements KeyListener{
 			
 			
 		//CHOIX DE PLUS QUE DEUX JOUEURS
-		
-		
-		}
-		
+		}		
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		//La moto n'as pas le droit de s'arrêter
-		
+		//La moto n'as pas le droit de s'arrêter		
 	}
 }

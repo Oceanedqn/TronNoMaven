@@ -2,8 +2,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -16,19 +14,32 @@ public class Menuu extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	int touche = 0;
+	/**
+	 * Constructor
+	 */
+	public Menuu() {
+    }
 	
-	public void paintComponent(Graphics g){
-		
+	/**
+	 * Method for draw the menu
+	 */
+	public void paintComponent(Graphics g){	
+		/**
+		 * Draw background black
+		 */
 		g.setColor(Color.BLACK);
-		g.fillRect(0, 0, 600, 400);
-		
+		g.fillRect(0, 0, 600, 400);	
+		/**
+		 * Write a text gray
+		 */
 		g.setColor(Color.GRAY);		
 		Font fonte = new Font("Zapfino", Font.BOLD,15);
 		g.setFont(fonte);
 		g.drawString("Press ENTER for start the game", 175, 250);
-		System.out.println("On dessine du texte");
-		
+	
+		/**
+		 * Insert a picture for the background
+		 */
 		try
 		{
 			Image img = ImageIO.read(new File("src/pictures/TronBleu.png"));
@@ -49,15 +60,10 @@ public class Menuu extends JPanel {
 		} 
 		catch(IOException e){
 			e.printStackTrace();
-		}	
-		
-		
-		
+		}		
 	}
 			
-	public Menuu() {
 
-        }
 	
 	
 	
